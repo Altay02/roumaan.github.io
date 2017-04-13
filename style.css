@@ -73,9 +73,7 @@ h2 {
 }
 
 .navInline {
-	display: inline-block;
 	text-align: center;
-	width: 48%;
 }
 
 .error {
@@ -95,6 +93,10 @@ h2 {
 }
 
 @media (min-width:425px) {
+	.navInline {
+		display: inline-block;
+		width: 49%;
+	}
 	body {
 		font-size: 0.7rem
 	}
