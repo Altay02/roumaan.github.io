@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+
+	<style>
+		.sun {
+			transition: .5s;
+			position: absolute;
+			background-color: yellow;
+			height:100px;
+			width:100px;
+			border-radius: 50px;
+			left: calc(50% - 50px);
+			top:100vh;
+		}	
+		
+		.sky {
+			transition: .5s;
+			background-color: #5a3e62;
+		}
+		
+		@media (min-width:400px) {
+			.sun {top:85vh}
+			.sky {background-color: #7b3f8d;}
+		}
+		
+		@media (min-width:600px) {
+			.sun {top:40vh}
+			.sky {background-color: rgba(213, 36, 227, 0.34);}
+		}
+		
+		@media (min-width:800px) {
+			.sun {top:5vh}
+			.sky {background-color: rgba(44, 174, 222, 0.34);}
+		}
+	</style>
+</head>
+<body class="sky">
+	<div class="sun"></div>
+</body>
+</html>

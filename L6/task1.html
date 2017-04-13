@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Блочная модель</title>
+	<style>
+		.my-div {
+			width: 300px;
+			height: 400px;
+			background-color: green;
+		}
+		
+		.my-inside {
+			width: 80%;
+			background-color: yellow;
+		}
+		
+		.my-inside-vis {
+			width: 80%;
+			height: 20%;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="my-div">
+		<div class="my-inside"></div>
+		<div class="my-inside-vis"></div>
+	</div>
+	<p>Не отображается блок с классом <i>my-inside</i> потому что он <strong>не имеет высоты</strong></p>
+</body>
+</html>
